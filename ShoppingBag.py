@@ -1,8 +1,7 @@
 from Goods import *
 
 class ShoppingBag:
-    goods = Goods()
-    def __init__(self,money,goods):
+    def __init__(self,money):
         self.__money = money
     
     def print_shopping_bag(self):
