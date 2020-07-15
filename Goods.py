@@ -4,7 +4,7 @@ class Goods:
         self.__price = price
 
     def print_goods(self):
-        print('?(Goods) ' + self.__goods_name + ' ' + str(self.__price) + '?')
+        print(' (Goods) ' + self.__goods_name + ' ' + str(self.__price) + '?')
 
     def set_goods_name(self,goods_name):
         self.__goods_name = goods_name

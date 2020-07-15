@@ -9,7 +9,7 @@ class Shop:
         self.__goods = Goods(goods_name,price)    
 
     def print_shop(self):
-        print('(Shop) ' + self.__shop_name + 'TEL?' + self.__tel_no)
+        print('(Shop) ' + self.__shop_name + 'TEL:' + self.__tel_no)
         self.__goods.print_goods()
 
     def set_shop_name(self,shop_name):
