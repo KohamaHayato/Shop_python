@@ -1,22 +1,22 @@
 class Goods:
     def __init__(self,goods_name,price):
-        self.__goods_name = goods_name                                  
-        self.__price = price
+        self.goods_name = goods_name                                  
+        self.price = price
 
     def print_goods(self):
-        print(' (Goods) ' + self.__goods_name + ' ' + str(self.__price) + '?')
+        print(' (Goods) ' + self.goods_name + ' ' + str(self.price) + '?')
 
     def set_goods_name(self,goods_name):
-        self.__goods_name = goods_name
+        self.goods_name = goods_name
     
     def get_goods_name(self):
-        return self.__goods_name
+        return self.goods_name
     
     def set_price(self,price):
-        self.__price = price
+        self.price = price
     
     def get_price(self):
-        return self.__price
+        return self.price
     
     goods_name = property(set_goods_name,get_goods_name)
 
