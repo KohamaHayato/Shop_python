@@ -1,22 +1,22 @@
 class Goods:
-    def __init__(self,goods_name,price):
-        self.goods_name = goods_name                                  
-        self.price = price
+    def __init__(self,goods_name='なし',price=0):
+        self.__goods_name = goods_name                                  
+        self.__price = price
 
     def print_goods(self):
-        print(' (Goods) ' + self.goods_name + ' ' + str(self.price) + '?')
+        print(' (Goods) ' + self.__goods_name + ' ' + str(self.__price) + '円')
 
     def set_goods_name(self,goods_name):
-        self.goods_name = goods_name
+        self.__goods_name = goods_name
     
     def get_goods_name(self):
-        return self.goods_name
+        return self.__goods_name
     
     def set_price(self,price):
-        self.price = price
+        self.__price = price
     
     def get_price(self):
-        return self.price
+        return self.__price
     
     goods_name = property(set_goods_name,get_goods_name)
 
