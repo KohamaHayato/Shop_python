@@ -15,6 +15,10 @@ class Customer:
         print('(Customer) ' + self.__customer_name + '「この店は何店ですか？」')
         shop.print_shop()
     
+    def buy_goods(self,shop,goods_name):
+        print('(Customer) ' + goods_name + 'をください。')
+        shop.sale_goods(goods_name,self.shopping_bag)
+
     def set_customer_name(self,customer_name):
         self.__customer_name = customer_name
     

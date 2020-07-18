@@ -1,23 +1,21 @@
 from Goods import *
 
 class ShoppingBag:
-    def __init__(self,money):
-        self.money = money
+    def __init__(self,money = 0):
+        self.__money = money
     
     def print_shopping_bag(self):
-        goods = Goods()
-        print('　(ShoppingBag) 限度額' + str(self.money) + '円')
+        goods = Goods() #初期化しているので商品が入っていないことになる
+        print('　(ShoppingBag) 限度額' + str(self.__money) + '円')
         if goods.get_goods_name() == 'なし':
             print('　(ShoppingBag) 商品は入っていません。')
         else :
             goods.print_goods()
 
-    '''
     def set_money(self,money):
-        self.money = money
+        self.__money = money
     
     def get_money(self):
-        return self.money
+        return self.__money
     
     money = property(set_money,get_money)
-    '''
