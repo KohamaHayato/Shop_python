@@ -18,7 +18,7 @@ class Shop:
             if(shopping_bag.get_money() > self.goods.get_price()):
                 charge = shopping_bag.get_money() - self.goods.get_price()
                 shopping_bag.set_money(charge)
-                self.goods.set_goods(self.goods)
+                shopping_bag.set_goods(self.goods)
                 print('まいどあり！ おつりは' + str(charge) + '円です。')
             else :
                 print('お金が足りません。')
