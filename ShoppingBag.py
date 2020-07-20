@@ -4,12 +4,11 @@ class ShoppingBag:
     def __init__(self,money = 0):
         self.__money = money
         self.__goods = Goods()
+
     def print_shopping_bag(self):
-        #初期化しているので商品が入っていないことになる
-        
-        print('　(ShoppingBag) 限度額' + str(self.__money) + '円')
+        print('  (ShoppingBag) 限度額' + str(self.__money) + '円')
         if self.__goods == None:
-            print('　(ShoppingBag) 商品は入っていません。')
+            print('  (ShoppingBag) 商品は入っていません。')
         else :
             self.__goods.print_goods()
 

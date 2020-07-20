@@ -1,10 +1,10 @@
 class Goods:
-    def __init__(self,goods_name='??',price=0):
+    def __init__(self,goods_name='',price=0):
         self.__goods_name = goods_name                                  
         self.__price = price
 
     def print_goods(self):
-        print('?(Goods) ' + self.__goods_name + ' ' + str(self.__price) + '円')
+        print('  (Goods) ' + self.__goods_name + ' ' + str(self.__price) + '円')
 
     def set_goods_name(self,goods_name):
         self.__goods_name = goods_name

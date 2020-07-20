@@ -19,11 +19,11 @@ class Shop:
                 charge = shopping_bag.get_money() - self.goods.get_price()
                 shopping_bag.set_money(charge)
                 shopping_bag.set_goods(self.goods)
-                print('まいどあり！ おつりは' + str(charge) + '円です。')
+                print('  (Shop) まいどあり！ おつりは' + str(charge) + '円です。')
             else :
-                print('お金が足りません。')
+                print('  (Shop) お金が足りません。')
         else :
-            print(goods_name + 'は取り扱っていません。申し訳ありません。')
+            print('  (Shop) ' + goods_name + 'は取り扱っていません。申し訳ありません。')
 
     def set_shop_name(self,shop_name):
         self.__shop_name = shop_name
