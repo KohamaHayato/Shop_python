@@ -23,10 +23,10 @@ class Shop2(Shop):
                     charge = shopping_bag.get_money() - goods.get_price()
                     shopping_bag.set_money(charge)
                     shopping_bag.set_goods(goods)
-                    print('  (Shop2) ?????? ????' + str(charge) + '????')
+                    print('  (Shop2) まいどあり！　おつりは' + str(charge) + 'です。')
                 else :
-                    print('  (Shop2) ?????????')
-                break
+                    print('  (Shop2) お金がたりません。')
+                
             else :
-                print('  (Shop2) ' + goods_name + '????????????????????')
-                break
+                print('  (Shop2) ' + goods_name + 'は取り扱っていません。')
+                

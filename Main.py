@@ -18,6 +18,9 @@ yamada.print_customer()
 yamada.buy_goods(tokyo,'海洋深層水')
 yamada.buy_goods(tokyo,'青汁一杯')
 
+tokyo.add_goods('青汁一杯',200)
+tokyo.print_shop()
+
 yamada.buy_goods(tokyo,'青汁一杯')
 
 yamada.print_customer()
